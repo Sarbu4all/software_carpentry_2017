@@ -1,0 +1,15 @@
+# numbers start counting form zero, one, two, three, ect...
+# dictionary = {'one:1'} - here one is the key and 1 is the value. 
+# numbers=[1,2,3,4,5] - these are arrays which starts with the zero, one, two etc.
+# dictionary is not used in the order whereas numbers are used in order. 
+# print(dictionary['one'] - prnts 1
+
+
+# import pandas - pandas helps to manipulate data making different scripts. 
+
+# dem_data=pandas.read_csv("/Users/Sarbu/Desktop/software_carpentry_2017/Day 1/Python/Dem_HealthData/TX.txt" , sep = '\t')
+print(dem_data) - importing data in the jupyter. {sep = '\t'} will seperat columns with tab
+
+# c_dem_data.loc[(new_dem_data['Suicide'] < 0, 'Suicide')] = 0    You use pipe to modify different columns.
+
+#

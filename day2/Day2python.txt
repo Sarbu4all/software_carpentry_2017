@@ -1,0 +1,9 @@
+First session:
+# curl -O link  - this is to download file directly from terminal. 'curl' is alternative to 'wget'.
+
+# jupyter notebook  - will open python jupyter notebook from terminal. Do not close the shell while using this. once shell
+					closed, notebook will shut down.
+					
+Second session:
+
+# pip install pygal

@@ -1,0 +1,503 @@
+  205  cat myDirStructure.txt 
+  206  less myDirStructure.txt 
+  207  ls puppet
+  208  ls puppet 2>err.txt
+  209  cat err.txt
+  210  ls Data puppet
+  211  ls Data/ puppet > lsData.txt
+  212  ls Data / puppet > lsData.txt 2>err2.txt
+  213  ls Data / puppet > lsData.txt 2>&1
+  214  ls Data/OECD/ByMeasure/
+  215  ls Data/OECD/ByMeasure/ | less
+  216  cat --help | less
+  217  / Data/PlayWithDataSets/
+  218  Data/PlayWithDataSets/
+  219  pwd
+  220  cat Data/PlayWithDataSets/
+  221  cat
+  222  ls
+  223  Data
+  224  cd Data
+  225  ls
+  226  PlayWithDataSets/
+  227  PlayWithDataSets
+  228  ls
+  229  PlayWithDataSets/
+  230  OECD/
+  231  ls
+  232  PlayWithDataSets/
+  233  CTools_Spring2017/Data/PlayWithDataSets/
+  234  CTools_Spring2017/Data/
+  235  cd CTools_Spring2017/Data/PlayWithDataSets/
+  236  cat IrisData.txt 
+  237  head IrisData.txt 
+  238  tail IrisData.txt 
+  239  head -n80 IrisData.txt | tail -n21 > IrisData_60-80.txt 
+  240  cat IrisData_60-80.txt 
+  241  cd ..
+  242  cd ..
+  243  pwd
+  244  ls
+  245  mkdir MyWork
+  246  mkdir MyWork > MyWork/
+  247  mkdir MyWork > MyWork
+  248  MyWork/
+  249  ls MyWork/
+  250  cd MyWork/
+  251  touch MyFirstFile.txt 
+  252  cat MyFirstFile.txt 
+  253  tw MyFirstFile.txt 
+  254  edit test.txt MyFirstFile.txt 
+  255  edit MyFirstFile.txt 
+  256  cat MyFirstFile.txt 
+  257  nano MyFirstFile.txt subjet of the whole wct of the whole world
+  258  tw
+  259  edit test.txt
+  260  edit MyFirstFile.txt 
+  261  nano MyFirstFile.txt 
+  262  edit MyFirstFile.txt 
+  263  cat MyFirstFile.txt 
+  264  cat TestFile.txt
+  265  nano TestFile.txt
+  266  nano TestFile.txt
+  267  echo "this is great" > new1.txt
+  268  cat new1.txt
+  269  cat > List.txt
+  270  cat -T YourFile
+  271  cat -T List.txt 
+  272  cat List.txt 
+  273  cat >> List.txt 
+  274  cat List.txt 
+  275  pwd
+  276  mv MyFirstFile.txt MyFirstScript.sh
+  277  ls
+  278  mv MyFirstScript.sh ../Scripts
+  279  ls
+  280  ls ../Scripts
+  281  cp new1.txt newlb.txt
+  282  cp ../Scripts/MyFirstScript.sh 
+  283  sl
+  284  ls
+  285  cp new1.txt new2.txt ../Results
+  286  ls ../Results/
+  287  rm new1.txt 
+  288  ls ../Results/
+  289  ls
+  290  rm -r draft
+  291  ls
+  292  rmdir draft
+  293  cd ../../
+  294  pwd
+  295  cd CTools_Spring2017/
+  296  mkdir History
+  297  ls
+  298  mv history.txt History/
+  299  ls History/
+  300  ls
+  301  mkdir Trash
+  302  cp MyWork/ Trash/
+  303  cp MyWork Trash/
+  304  cp r MyWork/ Trash/
+  305  cp -r MyWork/ Trash/
+  306  ls Trash/
+  307  ls MyWork/
+  308  ls
+  309  Scripts/
+  310  cd Scripts/
+  311  ls
+  312  mv MyFile.txt/MyWork Scripts
+  313  cd ..
+  314  MyWork/
+  315  ls
+  316  ls MyWork/
+  317  touch MyFile.txt/MyWork
+  318  tw
+  319  cd ~/CTools_Spring2017/
+  320  mkdir MyHW2
+  321  cd MyHW2/
+  322  cp United_States_data.txt  Data/OECD/ByCountry MyHW2
+  323  help cp
+  324  man cp
+  325  pwd
+  326  cp United_States_data.txt Sweden_data.txt ../Data/OECD/ByCountry/ MyHW2
+  327  cp ../Data/OECD/ByCountry/United_States_data.txt
+  328  ls
+  329  cp ../Data/OECD/ByCountry/United_States_data.txt
+  330  cp ./Data/OECD/ByCountry/United_States_data.txt
+  331  cp Data/OECD/ByCountry/United_States_data.txt
+  332  cp ~/Data/OECD/ByCountry/United_States_data.txt
+  333  cp ../Data/OECD/ByCountry/United_States_data.txt
+  334  ls ../Data/OECD/ByCountry/
+  335  cp ../Data/OECD/ByCountry/United_States_data.txt 
+  336  cp United_States_data.txt Sweden_data.txt ../Data/OECD/ByCountry/
+  337  cp United_States_data.txt Sweden_data.txt /Data/OECD/ByCountry/
+  338  cat ../History/
+  339  ls ../History/
+  340  cat ../History/History.txt
+  341  history
+  342  history ls
+  343  ls
+  344  cd CTools_Spring2017/
+  345  mkdir MyWork_Lesson5
+  346  ls
+  347  cp Data/OECD/OECD_Countries_Full.txt MyWork_Lesson5/
+  348  cd MyWork_Lesson5/
+  349  lx
+  350  ls
+  351  head OECD_Countries_Full.txt 
+  352  wc -l OECD_Countries_Full.txt 
+  353  taile OECD_Countries_Full.txt 
+  354  tail OECD_Countries_Full.txt 
+  355  cut -f1 OECD_Countries_Full.txt 
+  356  cut -f1 OECD_Countries_Full.txt > CountryList.txt
+  357  sort CountryList.txt 
+  358  sort CountryList.txt > CountryList_Sorted.txt
+  359  uniq CountryList_Sorted.txt 
+  360  uniq CountryList_Sorted.txt > CountryList_Sorted_uniq.txt
+  361  wc -l CountryList_Sorted_uniq.txt 
+  362  cat CountryList_Sorted_uniq.txt | less
+  363  grep 'Country' CountryList_Sorted_uniq.txt 
+  364  grep -v  'Country' CountryList_Sorted_uniq.txt > CountryList_Sorted_uniq_noHeader.txt
+  365  wc -l CountryList_Sorted_uniq_noHeader.txt 
+  366  ls
+  367  wc -l CountryList_Sorted_uniq_noHeader.txt > CountryCount.txt
+  368  ls
+  369  cd ..
+  370  cat Data/OECD/OECD_Countries_Full.txt 
+  371  cut -f Data/OECD/OECD_Countries_Full.txt | sort Data/OECD/OECD_Countries_Full.txt 
+  372  cut -f1 Data/OECD/OECD_Countries_Full.txt | sort Data/OECD/OECD_Countries_Full.txt 
+  373  MyWork_Lesson5/
+  374  ls
+  375  cd MyWork_Lesson5/
+  376  ls
+  377  ls OECD_Countries_Full.txt 
+  378  cut OECD_Countries_Full.txt 
+  379  cat OECD_Countries_Full.txt 
+  380  cut -f1 OECD_Countries_Full.txt | grep 'Country' OECD_Countries_Full.txt | sort OECD_Countries_Full.txt | wc -l OECD_Countries_Full.txt > CountryCount_2.txt
+  381  ls CountryCount_2.txt 
+  382  cat CountryCount_2.txt 
+  383  cut -f1 OECD_Countries_Full.txt | grep 'Country' OECD_Countries_Full.txt | sort u  OECD_Countries_Full.txt | wc -l OECD_Countries_Full.txt > CountryCount_2.txt
+  384  cut -f1 OECD_Countries_Full.txt | grep 'Country' OECD_Countries_Full.txt | sort -u  OECD_Countries_Full.txt | wc -l OECD_Countries_Full.txt > CountryCount_2.txt
+  385  cat CountryCount_2.txt 
+  386  ls CountryCount_2.txt 
+  387  ls
+  388  cut -f1 OECD_Countries_Full.txt | grep 'Country' | sort -u > CountryCount_2.txt
+  389  wc -l CountryCount_2.txt 
+  390  cut -f1 OECD_Countries_Full.txt | grep -v 'Country' | sort -u > CountryCount_2.txt
+  391  wc -l CountryCount_2.txt 
+  392  cat OECD_Countries_Full.txt 
+  393  cut OECD_Countries_Full.txt | grep 'Infant_mortality'
+  394  cat OECD_Countries_Full.txt | grep 'Infant_mortality'
+  395  cat OECD_Countries_Full.txt | grep 'Infant_mortality' | grep '2012'
+  396  cat OECD_Countries_Full.txt | grep 'Infant_mortality' | grep '2012'| sort -u -k6
+  397  cat OECD_Countries_Full.txt | grep 'Infant_mortality' | grep '2012'| sort -u -k6 | tail -n1
+  398  cat OECD_Countries_Full.txt | grep 'Infant_mortality' | grep '2012'| sort -u -k6 | tail -n1 > CountryWithHighestMortality.txt
+  399  cat CountryWithHighestMortality.txt 
+  400  cut _
+  401  cut -f1,6 CountryWithHighestMortality.txt 
+  402  cut -f1,6 CountryWithHighestMortality.txt > CountryWithHighestMortality.txt 
+  403  ls CountryWithHighestMortality.txt 
+  404  cat CountryWithHighestMortality.txt 
+  405  cat CountryWithHighestMortality.txt 
+  406  ls
+  407  cat CountryWithHighestMortality.txt 
+  408  cat OECD_Countries_Full.txt | grep 'Infant_mortality' | grep '2012'| sort -u -k6 | tail -n1 > CountryWithHighestMortality.txt
+  409  cat CountryWithHighestMortality.txt 
+  410  cut -f1,6 CountryWithHighestMortality.txt 
+  411  cat CountryWithHighestMortality.txt 
+  412  cut -f1,6 CountryWithHighestMortality.txt | > CountryWithHighestMortality.txt 
+  413  ls
+  414  ls CountryWithHighestMortality.txt 
+  415  cat CountryWithHighestMortality.txt 
+  416  cut -f1,6 CountryWithHighestMortality.txt 
+  417  cat OECD_Countries_Full.txt | grep 'Infant_mortality' | grep '2012'| sort -u -k6 | tail -n1 > CountryWithHighestMortality.txt
+  418  cat CountryWithHighestMortality.txt 
+  419  cat OECD_Countries_Full.txt | grep 'Infant_mortality' | grep '2012'| sort -u -k6 | tail -n1 | cut -f1,6  > CountryWithHighestMortality.txt
+  420  cat CountryWithHighestMortality.txt 
+  421  cat OECD_Countries_Full.txt 
+  422  cat OECD_Countries_Full.txt | grep 'Income_inquality_Gini_coefficient,_level,_late_2000s' | sort -k6
+  423  cat OECD_Countries_Full.txt | grep 'Income_inquality_Gini_coefficient,_level,_late_2000s' | sort -k6
+  424  cat OECD_Countries_Full.txt | grep 'Income_inquality'
+  425  grep 'Income_inquality' OECD_Countries_Full.txt 
+  426  cat OECD_Countries_Full.txt | grep 'Income_inquality'
+  427  cat OECD_Countries_Full.txt | grep 'Income_inquality' > CountryLowest_Income.txt
+  428  cat CountryLowest_Income.txt 
+  429  history
+  430  history > History_Lesson_5.txt
+  431  ls
+  432  cat History_Lesson_5.txt 
+  433  tw
+  434  edit test.txt
+  435  nano
+  436  nano
+  437  ls ../MyWork/
+  438  ls ../MyHW2/
+  439  cd ~/CTools_Spring2017/MyHW2/
+  440  cp ../Data/OECD/ByCountry/United_States_data.txt 
+  441  cp ../Data/OECD/ByCountry/United_States_data.txt MyHW2
+  442  ls
+  443  rm MyHW2 
+  444  ls
+  445  cp ../Data/OECD/ByCountry/ United_States_data.txt
+  446  cp United_States_data.txt ../Data/OECD/ByCountry/
+  447  cp ../Data/OECD/ByCountry/United_States_data.txt > United_States_data.txt
+  448  cp -r ../Data/OECD/ByCountry/United_States_data.txt > United_States_data.txt
+  449  cp -R ../Data/OECD/ByCountry/United_States_data.txt > United_States_data.txt
+  450  cp ../Data/OECD/ByCountry/United_States_data.txt
+  451  cp ../Data/OECD/ByCountry/Sweden_data.txt 
+  452  cp myhome
+  453  cp myhome.txt
+  454  cp ../Data/OECD/ByCountry/United_States_data.txt United_States_data.txt 
+  455  ls
+  456  cat United_States_data.txt 
+  457  ls 
+  458  ls ../Data/OECD/ByCountry/
+  459  cp ../Data/OECD/ByCountry/Sweden_data.txt Sweden_data.txt
+  460  ls
+  461  cat Sweden_data.txt 
+  462  npp Hw2.txt
+  463  edit Hw2.txt
+  464  cp ../Data/OECD/ByCountry/United_States_data.txt Sweden_data.txt United_States_data.txt Sweden_data.txt 
+  465  ls
+  466  cat United_States_data.txt 
+  467  cat Sweden_data.txt 
+  468  grep 'Povertyrate' United_States_data.txt 
+  469  ls
+  470  cat United_States_data.txt | grep 'Poverty rate'
+  471  cat United_States_data.txt 
+  472  grep 'poverty' /United_States_data.txt 
+  473  grep 'poverty' United_States_data.txt 
+  474  grep 'Poverty' United_States_data.txt > US_poverty.txt
+  475  ls
+  476  cat US_poverty.txt 
+  477  grep 'Poverty' Sweden_data.txt > Sweden_poverty.txt
+  478  cat Sweden_poverty.txt 
+  479  echo "poverty rate is higher in United States than Sweden"
+  480  ls
+  481  ls -alt
+  482  edit test.txt
+  483  cd CTools_Spring2017/
+  484  ls
+  485  cat MyHW2
+  486  ls MyHW2/
+  487  cat MyHW2/Hw2.txt 
+  488  edit Hw2.txt
+  489  ls
+  490  MyWork
+  491  ls MyWork
+  492  MyHW2
+  493  ls MyHW2/
+  494  python
+  495  python
+  496  python
+  497  tw
+  498  jupyter notebook
+  499  python
+  500  jupyter notebook
+  501* cd ~/Desktop/software_carpentry_2017/Day\ 1/Python/Script 1.py 
+  502  clear
+  503  whoami
+  504  pwd
+  505  ls /home
+  506  cd
+  507  cd Desktop/software_carpentry_2017/
+  508  cd Day_1/Python/
+  509  ls
+  510  ls Dem_HealthData/
+  511  cat Dem_HealthData/TX.txt
+  512  clear
+  513  ls -F
+  514  ls -F Dem_HealthData/
+  515  ls -F spaces
+  516  ls -F spaces Dem_HealthData/
+  517  ls
+  518  ls
+  519  cd Dem_HealthData-2/
+  520  ls -a
+  521  ls -F
+  522  ls ../backup
+  523  ls -r -F
+  524  pwd
+  525  cd /
+  526  pwd
+  527  cd ~/Desktop/
+  528  ls
+  529  mkdir Thesis
+  530  ls Thesis/
+  531  nano
+  532  nano draft.txt
+  533  cd Thesis/
+  534  nano draft.txt
+  535  ls
+  536  cat draft.txt 
+  537  rm draft.txt 
+  538  ls
+  539  nano draft.txt
+  540  cd ..
+  541  rm Thesis/
+  542  rmdir Thesis/
+  543  rm Thesis/draft.txt | rmdir Thesis
+  544  rm Thesis/draft.txt
+  545  rmdir Thesis/
+  546  mkdir Thesis
+  547  nano Thesis/draft.txt
+  548  ls Thesis/
+  549  cat Thesis/draft.txt 
+  550  nano Thesis/quote.txt
+  551  mv Thesis/draft.txt Thesis/quote.txt 
+  552  cat Thesis/quote.txt 
+  553  ls
+  554  ls Thesis/
+  555  cd software_carpentry_2017/Day_1/Python/Dem_HealthData-2/
+  556  ls
+  557  mkdir data
+  558  ls
+  559  cp TX.txt data/TX.txt
+  560  ls data/
+  561  rm data/TX.txt
+  562  ls
+  563  ls data
+  564  pwd
+  565  cd ../
+  566  pwd
+  567  cd Dem_HealthData-2/
+  568  cd ../../
+  569  pwd
+  570  cd Python/Dem_HealthData-2/
+  571  cd ../ mkdir demon
+  572  ls
+  573  ls ../
+  574  ls ../Python/
+  575  pwd
+  576  ls ../Day_1
+  577  ls
+  578  pwd
+  579  ls /Dem_HealthData-2
+  580  cd Dem_HealthData-2/
+  581  ls 
+  582  ls
+  583  ls
+  584  clear
+  585  wc *.txt
+  586  wc ??.txt
+  587  edit TX.txt
+  588  wc -l ??.txt > counties.txt
+  589  cat couties.txt
+  590  wc -l ??.txt > counties.txt
+  591  cat couties.txt
+  592  ls
+  593  cat counties.txt 
+  594  sort counties.txt 
+  595  sort -n counties.txt > sorted_counties.txt
+  596  head -1 sorted_counties.txt 
+  597  head -5 sorted_counties.txt 
+  598  sort -n counties.txt | head -1
+  599  head -1 counties.txt 
+  600  wc -l ??.txt | sort -n | head -1
+  601  wc -l TX.txt 
+  602  wc -l < TX.txt 
+  603  wc
+  604  wc
+  605  echo hello > testfile01.txt
+  606  echo hello >> testfile01.txt
+  607  cat testfile01.txt 
+  608  echo hello >> testfile02.txt
+  609  cat testfile*.txt
+  610  ls
+  611  cp *.txt data/*.tsv
+  612  for filename in TX.txt NM.txt OK.txt AL.txt LA.txt ; do head -3 $filename; done
+  613  for filename in TX.txt NM.txt OK.txt AL.txt LA.txt ; do head -3 ${filename}; done
+  614  for filename in TX.txt NM.txt OK.txt AL.txt LA.txt ; do head -3 ${file}name; done
+  615  for x in TX.txt AK.txt MA.txt CA.txt NC.txt ; do head -3 $filename; done
+  616  for x in TX.txt AK.txt MA.txt CA.txt NC.txt ; do head -3 $x; done
+  617  for filename in ??.txt; do echo $filename; cut -3 $filename; done
+  618  for filename in ??.txt; do echo $filename; cut -f3 $filename; done
+  619  for filename in ??.txt; do $filename; cut f3
+  620  for filename in ??.txt; do $filename; cut -f3
+  621  for filename in ??.txt; do $filename; cut -f3 $filename | tail -n +2; done
+  622  for file in A?.txt; do echo $file; done
+  623  for file in A?.txt; do echo $file; cut -f3 $file | tail -n +2; done
+  624  tail -n +2 AK.txt | wc -l
+  625  ls spaces/
+  626  mkdir spaces1
+  627  cd spaces1
+  628  touch Texas.txt
+  629  touch Texas.txt
+  630  touch New_Mexico.txt
+  631  ls
+  632  ls -F
+  633  touch New Mexico.txt
+  634  ls
+  635  touch New\ Mexico.txt
+  636  ls
+  637  rm "New
+do
+rm
+done
+  638  for file in *; do echo $file; done
+  639  rm New
+  640  ls
+  641  rm Mexico.txt 
+  642  ls
+  643  cd ..
+  644  ls
+  645  for filename in ??.txt; do echo cp $filename data/${filename:0:2}.tsv; done
+  646  for filename in ??.txt; do  cp $filename data/${filename:0:2}.tsv; done
+  647  ls data/
+  648  cd data/
+  649  nano add.py
+  650  cat add.py 
+  651  python add.py
+  652  nano add.py 
+  653  cat add.py 
+  654  python add.py 
+  655  python add.py < numbers.txt
+  656  nano numbers.txt
+  657  python add.py < numbers.txt
+  658  cat numbers.txt 
+  659  cut -f7 TX.txt | tail -n +2 |
+  660  cut -f7 TX.tsv | tail -n +2 | python add.py 
+  661  nano births.sh
+  662  nano births.sh
+  663  cat births.sh 
+  664  bash births.sh 
+  665  nano births.sh 
+  666  cat births.sh 
+  667  nano births.sh 
+  668  cat births.sh 
+  669  bash births.sh 
+  670  bash births.sh TX
+  671  bash births.sh FL
+  672  bash births.sh NM
+  673  cat TX.tsv 
+  674  grep Tarrant TX.tsv 
+  675  grep Dallas TX.tsv 
+  676  grep Dallas ??.tsv 
+  677  grep ^A -n ??.tsv
+  678  grep ^A ??.tsv | wc -l
+  679  grep ^A ??.tsv | wc
+  680  grep -v A ??.tsv | wc
+  681  grep -v A ??.tsv
+  682  man grep
+  683  cd ..
+  684  ls
+  685  find . -type d
+  686  find . -name A?.tsv
+  687  wc -l $(find . -name A?.tsv)
+  688  grep ^A $(find . -name A?.tsv)
+  689  R
+  690  R
+  691  ls
+  692  cat AK.txt 
+  693  pwd
+  694  ls
+  695  data
+  696  cd data
+  697  ls
+  698  cat add.py 
+  699  python add.py 
+  700  cat numbers.txt 
+  701  python add.py < numbers.txt 
+  702  cut -f7 TX.tsv | tail -n +2 | python add.py 
+  703  history
+  704  history > history.txt
